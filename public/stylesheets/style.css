@@ -1,0 +1,177 @@
+html, body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.corner-banner {
+  color: #F47D31;
+  background-color: #333;
+  -moz-box-shadow: 2px 2px 20px #888;
+  -moz-transform: rotate(-45deg);
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 50% 50%;
+  position: relative; 
+  width: 300px;
+  top: 45px;
+  left: -95px;
+  text-align: center;
+}​
+
+.textarea {
+  height: 10em;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.container-narrow > hr {
+  margin: 20px 0;
+}
+
+.packages {
+  text-align: center;
+}
+
+
+img.featurette-image {
+  width: 50%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:100px; /* this needs to be bigger than footer height*/
+}
+
+section h3 {
+  border-bottom: 1px #EEE solid;
+}
+
+.navbar.bakery-nav .navbar-inner {
+  border: none;
+}
+
+.thumbnail {
+  text-align: center;
+  max-height: 230px;
+  overflow: hidden;
+}
+
+.thumbnail.disabled {
+  opacity: 0.4;
+}
+
+.thumbnail:not(.disabled):hover {
+  border-color: #08C;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  cursor: pointer;
+}
+
+.thumbnail .icon {
+  height: 110px;
+}
+
+.thumbnail .icon img {
+  height: 100%;
+}
+
+footer.footer {
+  background-color: whiteSmoke;
+  position: relative;
+  margin-top: -120px; /* negative value of footer height */
+  height: 100px;
+  clear:both;
+  padding-top:20px;
+  text-align: center;
+} 
+
+.footer p {
+  margin-bottom: 0;
+  color: #777;
+}
+
+.ingredient {
+  min-height: 25px;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+.ingredient .icon {
+  width: auto;
+  min-width: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+  background-color: #EEE;
+}
+
+.ingredient.first .icon {
+  -webkit-border-radius: 4px 0 0 0;
+  -moz-border-radius: 4px 0 0 0;
+  border-radius: 4px 0 0 0;
+}
+
+.ingredient.last .icon {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+}
+
+.ingredient .name {
+  height: 25px;
+  margin-left: -1px;
+  width: 100px;
+}
+
+.ingredient span {
+  display: inline-block;
+  padding: 4px 5px;
+  border: 1px solid #CCC;
+  font-size: 14px;
+  line-height: 23px;
+  height: 25px;
+}
+
+.ingredient span:hover {
+  background-color: #EEE;
+}
+
+.ingredient .description {
+  margin-left: -1px;
+  width: 450px;
+}
+
+.ingredient .checkbox {
+  margin-left: -1px;
+  width: 25px;
+  background-color: white;
+}
+
+.ingredient.first .checkbox {
+  -webkit-border-radius: 0 4px 0 0;
+  -moz-border-radius: 0 4px 0 0;
+  border-radius: 0 4px 0 0;
+}
+
+.ingredient.last .checkbox {
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
+}
+
+.ingredient .checkbox.checked, .checkbox:hover {
+  background: url("../images/icons/glyphicons_206_ok_2.png") no-repeat center #EEE;
+}

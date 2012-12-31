@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  .navbar.bakery-nav
+    .navbar-inner
+      .container
+        .nav-collapse.collapse
+          ul.nav
+            li 
+              a('href=#os') Operating System 
+            li 
+              a('href=#components') Components
+            li 
+              a('href=#extras') Extras
+
+  section#introduction
+    h3 Introduction
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  section#pastry 
+    a('name=os')
+    h3 Operating System
+    p The Raspberry Operating System controls the overall hardware and software management of the device. We currently offer a choice of three operating systems.
+    ul.thumbnails
+      li.span3
+        .thumbnail
+          .icon
+            img('src=./images/archlinuxlogo.png', 'style=width:50%')
+          h3 Arch Linux
+          p A lightweight and flexible Linux distribution that tries to <em>Keep It Simple</em>.
+
+      li.span3
+        .thumbnail.disabled
+          div.corner-banner Coming Soon
+          .icon
+            img('src=./images/debian.png')
+          h3 Raspbian
+          p The officially promoted Raspberry Pi operating system based on Debian Linux.
+
+      li.span3
+        .thumbnail.disabled
+          div.corner-banner Coming Soon
+          .icon
+            img('src=./images/raspbmc.png')
+          h3 Raspbmc
+          p The simplistic yet powerful Raspberry Pi media center distribution.
+
+    .packages
+      ul.unstyled
+        li#base.ingredient.first
+          span.icon
+            img(src="./images/icons/glyphicons_280_settings.png")
+          span.name Base
+          span.description A group of base packages neccessary for a complete install.
+          span.checkbox.checked.icon &nbsp;
+        li#base-devel.ingredient.last
+          span.icon
+            img(src="./images/icons/glyphicons_136_cogwheel.png")
+          span.name Base-Devel
+          span.description A group of packages for Linux development.
+          span.checkbox.icon &nbsp;  
+
+  section#filling
+    h3 Filling
+
+  section#extras
+    h3 Extras

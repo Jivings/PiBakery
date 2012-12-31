@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  form
+    fieldset
+      legend Create a new package
+      ul.unstyled
+        li
+          input.input-xxlarge(type='text', placeholder='Package name')
+        li
+          input.input-xxlarge(type='text', placeholder='Category') 
+          a.btn.btn-link('href=#newCategory') New Category
+        li
+          textarea.input-block-level.textarea
+            | Please provide a detailed description of the package. This input supports markdown
+        li
+          button.btn.btn-submit Submit
+    

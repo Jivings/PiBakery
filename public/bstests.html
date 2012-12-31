@@ -1,0 +1,85 @@
+<html>
+
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" />
+    <style>
+      html {
+        margin: 40px;
+      }
+
+      .ingredient {
+        min-height: 25px;
+        cursor: pointer;
+      }
+
+      .ingredient .icon {
+        width: auto;
+        min-width: 16px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 22px;
+        text-align: center;
+        text-shadow: 0 1px 0 white;
+        background-color: #EEE;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .ingredient .name {
+
+        height: 25px;
+        margin-left: -5px;
+      }
+
+      .ingredient span {
+        display: inline-block;
+        padding: 4px 5px;
+        border: 1px solid #CCC;
+        font-size: 14px;
+        line-height: 22px;
+        height: 25px;
+      }
+
+      .ingredient span:hover {
+        background-color: #EEE;
+      }
+
+      .ingredient .description {
+        margin-left: -5px;
+      }
+
+      .ingredient .checkbox {
+        margin-left: -5px;
+        width: 25px;
+        -webkit-border-radius: 0 4px 4px 0;
+        -moz-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+        background-color: white;
+      }
+
+      .ingredient .checkbox.checked, .checkbox:hover {
+        background: url("./images/icons/glyphicons_206_ok_2.png") no-repeat center #EEE;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <ul class="unstyled">
+        <li id="base-devel" class="ingredient">
+          <span class="icon">
+            <img src="./images/icons/glyphicons_280_settings.png" />
+          </span>
+          <span class="name">Base</span>
+          <span class="description">The base packages neccessary for a complete install.</span>
+          <span class="checkbox icon">&nbsp;</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+  
+</html>
