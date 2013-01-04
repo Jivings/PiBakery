@@ -1,19 +1,32 @@
 extends layout
 
 block content
-
-  form
+  #response.alert.hide
+  form(method='post', target='/ingredients')
     fieldset
       legend Create a new package
       ul.unstyled
         li
-          input.input-xxlarge(type='text', placeholder='Package name')
+          select#os(style='float:left')
+            option Arch Linux
+            option.disabled Raspbian
+            option.disabled Raspbmc
+          .input-prepend.input-append(style='float:left; margin-left:20px;')
+             button.btn#icon-upload Upload
+             input(type='text')
+             button.btn#icon-ok &nbsp;
         li
-          input.input-xxlarge(type='text', placeholder='Category') 
+          input#name.input-xxlarge(type='text', placeholder='Package name')
+        li
+          input#category.input-xxlarge(type='text', placeholder='Category') 
           a.btn.btn-link('href=#newCategory') New Category
         li
-          textarea.input-block-level.textarea
-            | Please provide a detailed description of the package. This input supports markdown
+          input#summary.input-xxlarge(type='text',
+          placeholder='Summary (max 100 characters)')
         li
-          button.btn.btn-submit Submit
+          | Please provide a detailed description of the package. This input supports markdown.
+          textarea#description.input-block-level.textarea(rows='10')
+            
+        li
+          input(type='submit').btn.btn-submit Submit
     

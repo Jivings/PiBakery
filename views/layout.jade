@@ -9,7 +9,7 @@ html
       #main.container-narrow
         .masthead
           ul.nav.nav-pills.pull-right
-            li.active
+            li
               a(href='/') Home
             li
               a(href='/bakery') Bakery 
@@ -30,5 +30,18 @@ html
       p 
         | Supported by the 
         a(href='http://raspberrypi.stackexchange.com') Raspberry Pi Stack Exchange
+
   script(src='/javascripts/jquery.js')
   script(src='/javascripts/bootstrap.js')
+  script(src='/javascripts/underscore.js')
+  script(src='/javascripts/backbone.js')
+  script(src='/javascripts/ingredient.js')
+  script(src='/javascripts/index.js')
+
+  li#ingredient-template.ingredient(style='display:none')
+    span.icon
+      img(src="./images/icons/glyphicons_280_settings.png")
+    span.name 
+      a(href='') Name
+    span.description Description
+    span.checkbox.icon &nbsp;

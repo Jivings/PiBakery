@@ -2,7 +2,7 @@ extends layout
 
 block content
   
-  img.featurette-image.pull-right(src='http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-chrome.png');
+  img.featurette-image.pull-right(src='./images/logo.png')
   h2.featurette-heading
     | Welcome to the Bakery. 
     span.muted
@@ -10,4 +10,4 @@ block content
 
   hr
 
-  button.btn.btn-large.btn-primary Start Baking!
+  a.btn.btn-large.btn-primary(href='/bakery') Start Baking!

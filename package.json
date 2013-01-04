@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "pibakery-site",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "jade": "*",
     "cron" : "*",
     "winston" : "*",
-    "time" : "*"
+    "time" : "*",
+    "nano" : "3.3.4"
   }
 }

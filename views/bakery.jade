@@ -52,12 +52,13 @@ block content
 
     .packages
       ul.unstyled
-        li#base.ingredient.first
+        li#base.ingredient.first.checked
           span.icon
             img(src="./images/icons/glyphicons_280_settings.png")
-          span.name Base
+          span.name 
+            a(href='') Base
           span.description A group of base packages neccessary for a complete install.
-          span.checkbox.checked.icon &nbsp;
+          span.checkbox.icon &nbsp;
         li#base-devel.ingredient.last
           span.icon
             img(src="./images/icons/glyphicons_136_cogwheel.png")
@@ -70,3 +71,5 @@ block content
 
   section#extras
     h3 Extras
+
+   

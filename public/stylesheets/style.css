@@ -172,6 +172,6 @@ footer.footer {
   border-radius: 0 0 4px 0;
 }
 
-.ingredient .checkbox.checked, .checkbox:hover {
+.ingredient.checked .checkbox, .checkbox:hover {
   background: url("../images/icons/glyphicons_206_ok_2.png") no-repeat center #EEE;
 }
