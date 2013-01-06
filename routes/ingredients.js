@@ -33,8 +33,7 @@ exports.create = function(req, res) {
       res.send('Successfully inserted new package');
     }
     else {
-      console.log('Inserted new pacakge.');
-      res.send(body);
+      res.send(503, 'Database   currently unavailable')
     }
   });
 };
